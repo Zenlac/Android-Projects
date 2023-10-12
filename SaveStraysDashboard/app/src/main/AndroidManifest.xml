@@ -13,55 +13,47 @@
         android:theme="@style/Theme.SaveStraysDashboard"
         tools:targetApi="31">
         <activity
+            android:name=".Profile"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity
             android:name=".Logout"
-            android:exported="true" />
-
-
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".Settings"
-            android:exported="true" />
-
-
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".StrayReporting"
-            android:exported="true" />
-
-
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".Map"
-            android:exported="true" />
-
-
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".PetStore"
-            android:exported="true" />
-
-
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".PetAdoption"
-            android:exported="true" />
-
-
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".Dashboard"
-            android:exported="true" >
-
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.SaveStraysDashboard">
-
-        </activity>
-
-
+            android:theme="@style/Theme.SaveStraysDashboard"></activity>
     </application>
 
 </manifest>
