@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard">
+    android:background="#F4A73F"
+    tools:context=".MainActivity">
+
 
     <Button
         android:id="@+id/PetAdoptionBtn"
         android:layout_width="147dp"
         android:layout_height="171dp"
+        android:backgroundTint="#FFFCF8"
         android:text="Pet Adoption"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +25,7 @@
         android:id="@+id/LogoutBtn"
         android:layout_width="147dp"
         android:layout_height="171dp"
+        android:backgroundTint="#FFFCF8"
         android:text="Log out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +38,7 @@
         android:id="@+id/PetStoreBtn"
         android:layout_width="147dp"
         android:layout_height="171dp"
+        android:backgroundTint="#FFFCF8"
         android:text="Pet Store"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +52,7 @@
         android:layout_width="147dp"
         android:layout_height="171dp"
         android:layout_marginBottom="28dp"
+        android:backgroundTint="#FFFCF8"
         android:text="Map"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,6 +65,7 @@
         android:id="@+id/StrayReportingBtn"
         android:layout_width="147dp"
         android:layout_height="171dp"
+        android:backgroundTint="#FFFCF8"
         android:text="Stray Reporting"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,6 +78,7 @@
         android:id="@+id/SettingsBtn"
         android:layout_width="147dp"
         android:layout_height="171dp"
+        android:backgroundTint="#FFFCF8"
         android:text="Settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,29 +87,33 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.935" />
 
-    <ImageButton
-        android:id="@+id/ProfileBtn"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:contentDescription="profile button"
+    <ImageView
+        android:id="@+id/SaveStraysImg"
+        android:layout_width="94dp"
+        android:layout_height="58dp"
+        android:background="#FFFCF8"
+        android:contentDescription="save strays logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/ic_small_logo" />
+
+    <ImageButton
+        android:id="@+id/ProfileBtn"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#FFFCF8"
+        android:contentDescription="Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/ic_profile_button" />
 
-    <ImageView
-        android:id="@+id/SaveStrayImg"
-        android:layout_width="82dp"
-        android:layout_height="48dp"
-        android:contentDescription="small logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        app:srcCompat="@drawable/ic_small_logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
