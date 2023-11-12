@@ -9,9 +9,21 @@
 
 
     <ImageView
+        android:id="@+id/DashboardNavBar"
+        android:layout_width="410dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="46dp"
+        android:contentDescription="NavBar"
+        android:src="@drawable/shape_rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/CatTreeBg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
         android:id="@+id/CatTreeBg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="733dp"
         android:layout_marginTop="136dp"
         android:contentDescription="Cat Tree Background"
         android:src="@drawable/cat_tree"
@@ -71,7 +83,7 @@
         android:id="@+id/SaveStraysImg"
         android:layout_width="94dp"
         android:layout_height="58dp"
-        android:background="#F4A73F"
+        android:backgroundTint="@android:color/transparent"
         android:contentDescription="save strays logo"
         android:src="@drawable/ic_ss_logo"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,7 +99,8 @@
         android:id="@+id/ProfileBtn"
         android:layout_width="62dp"
         android:layout_height="59dp"
-        android:backgroundTint="#FFFCF8"
+        android:background="@drawable/profile_bg"
+        android:backgroundTint="@color/black"
         android:contentDescription="Profile"
         android:src="@drawable/ic_profile_button"
         app:layout_constraintBottom_toBottomOf="parent"
