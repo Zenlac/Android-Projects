@@ -20,12 +20,12 @@
         app:srcCompat="@drawable/shape_rectangle" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/PetAdoptSearchInput"
         android:layout_width="262dp"
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:hint="Search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

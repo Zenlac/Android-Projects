@@ -3,7 +3,7 @@ package com.example.savestraysdashboard
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Map : AppCompatActivity() {
+class MapActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)

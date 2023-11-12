@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
 
         val mapBtn = findViewById<Button>(R.id.MapBtn)
         mapBtn.setOnClickListener{
-            val intent = Intent(this, Map::class.java)
+            val intent = Intent(this,MapActivity::class.java)
             startActivity(intent)
         }
 
