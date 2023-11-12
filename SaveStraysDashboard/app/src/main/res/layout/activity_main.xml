@@ -8,100 +8,80 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:id="@+id/CatTreeBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:contentDescription="Cat Tree Background"
+        android:src="@drawable/cat_tree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/PetAdoptionBtn"
-        android:layout_width="147dp"
-        android:layout_height="171dp"
-        android:backgroundTint="#FFFCF8"
-        android:text="Pet Adoption"
+        android:layout_width="160dp"
+        android:layout_height="122dp"
+        android:background="@drawable/cat_icon_enhanced"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:rotation="-11"
+        android:text="Pet \n Adoption"
+        android:textColor="#fdf5e2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
-
-    <Button
-        android:id="@+id/LogoutBtn"
-        android:layout_width="147dp"
-        android:layout_height="171dp"
-        android:backgroundTint="#FFFCF8"
-        android:text="Log out"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935" />
-
-    <Button
-        android:id="@+id/PetStoreBtn"
-        android:layout_width="147dp"
-        android:layout_height="171dp"
-        android:backgroundTint="#FFFCF8"
-        android:text="Pet Store"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
+        app:layout_constraintVertical_bias="0.338" />
 
     <Button
         android:id="@+id/MapBtn"
-        android:layout_width="147dp"
-        android:layout_height="171dp"
-        android:layout_marginBottom="28dp"
-        android:backgroundTint="#FFFCF8"
+        android:layout_width="151dp"
+        android:layout_height="113dp"
+        android:background="@drawable/cat_icon_enhanced"
+        android:backgroundTint="#fdf5e2"
+        android:rotation="-26"
         android:text="Map"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.607" />
+        app:layout_constraintVertical_bias="0.648" />
 
     <Button
         android:id="@+id/StrayReportingBtn"
-        android:layout_width="147dp"
-        android:layout_height="171dp"
-        android:backgroundTint="#FFFCF8"
-        android:text="Stray Reporting"
+        android:layout_width="161dp"
+        android:layout_height="120dp"
+        android:background="@drawable/cat_icon_enhanced"
+        android:backgroundTint="#632307"
+        android:rotation="12"
+        android:text="Stray \n Reporting"
+        android:textColor="#fdf5e2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
-
-    <Button
-        android:id="@+id/SettingsBtn"
-        android:layout_width="147dp"
-        android:layout_height="171dp"
-        android:backgroundTint="#FFFCF8"
-        android:text="Settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935" />
+        app:layout_constraintVertical_bias="0.52" />
 
     <ImageView
         android:id="@+id/SaveStraysImg"
         android:layout_width="94dp"
         android:layout_height="58dp"
-        android:background="#FFFCF8"
-        android:src="@drawable/ic_small_logo"
+        android:background="#F4A73F"
         android:contentDescription="save strays logo"
+        android:src="@drawable/ic_ss_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/ic_small_logo"
-        tools:srcCompat="@drawable/ic_small_logo" />
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/ic_ss_logo"
+        tools:srcCompat="@drawable/ic_ss_logo" />
 
     <ImageButton
         android:id="@+id/ProfileBtn"
