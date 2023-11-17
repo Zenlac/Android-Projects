@@ -22,13 +22,12 @@
 
     <ImageView
         android:id="@+id/CatTreeBg"
-        android:layout_width="412dp"
-        android:layout_height="733dp"
-        android:layout_marginTop="136dp"
+        android:layout_width="383dp"
+        android:layout_height="704dp"
+        android:layout_marginTop="156dp"
         android:contentDescription="Cat Tree Background"
         android:src="@drawable/cat_tree"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintVertical_bias="0.367" />
 
     <Button
         android:id="@+id/MapBtn"
@@ -54,14 +53,14 @@
         android:layout_height="113dp"
         android:background="@drawable/cat_icon_enhanced"
         android:backgroundTint="#fdf5e2"
-        android:rotation="-26"
+        android:rotation="-8"
         android:text="Map"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.648" />
+        app:layout_constraintVertical_bias="0.656" />
 
     <Button
         android:id="@+id/StrayReportingBtn"
@@ -77,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.541" />
 
     <ImageView
         android:id="@+id/SaveStraysImg"
