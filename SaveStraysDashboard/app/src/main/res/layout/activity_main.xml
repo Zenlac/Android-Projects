@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/DashboardNavBar"
-        android:layout_width="410dp"
+        android:layout_width="match_parent"
         android:layout_height="202dp"
         android:layout_marginBottom="46dp"
         android:contentDescription="NavBar"

@@ -3,9 +3,9 @@ package com.example.savestraysdashboard
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Login : AppCompatActivity() {
+class PetAdoptionInfo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_pet_adoption_info)
     }
 }

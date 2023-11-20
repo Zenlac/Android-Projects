@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/PetAdoptNavBar"
-        android:layout_width="414dp"
+        android:layout_width="match_parent"
         android:layout_height="154dp"
         android:layout_marginBottom="60dp"
         android:contentDescription="Nav bar"
@@ -63,11 +63,12 @@
 
     <ListView
         android:id="@+id/PetAdoptionList"
-        android:layout_width="408dp"
-        android:layout_height="598dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="132dp"
+        android:background="#fdf5e2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

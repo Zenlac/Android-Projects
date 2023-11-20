@@ -8,8 +8,21 @@
     tools:context=".StrayReporting">
 
     <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
+        android:alpha=".6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162"
+        app:srcCompat="@drawable/paw_prints_trail_across_screen_removebg_preview_vectormaker_co" />
+
+    <ImageView
         android:id="@+id/StrayReportNavBar"
-        android:layout_width="412dp"
+        android:layout_width="match_parent"
         android:layout_height="139dp"
         android:layout_marginBottom="644dp"
         android:contentDescription="Nav bar"
@@ -24,38 +37,38 @@
         android:layout_width="268dp"
         android:layout_height="73dp"
         android:contentDescription="Nav bar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/strayReportShape2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191"
+        app:layout_constraintTop_toBottomOf="@+id/StrayReportNavBar"
+        app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@drawable/shape_rectangle" />
 
     <ImageView
         android:id="@+id/strayReportShape2"
-        android:layout_width="314dp"
-        android:layout_height="110dp"
+        android:layout_width="312dp"
+        android:layout_height="156dp"
         android:contentDescription="Nav bar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
+        app:layout_constraintVertical_bias="0.483"
         app:srcCompat="@drawable/shape_rectangle" />
 
     <ImageView
         android:id="@+id/strayReportShape3"
-        android:layout_width="316dp"
-        android:layout_height="106dp"
+        android:layout_width="314dp"
+        android:layout_height="152dp"
         android:contentDescription="Nav bar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795"
+        app:layout_constraintVertical_bias="0.841"
         app:srcCompat="@drawable/shape_rectangle" />
 
     <ImageButton
@@ -76,14 +89,69 @@
         android:id="@+id/StrayReportText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="0dp"
         android:text="Stray Reporting"
         android:textSize="30dp"
-        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/StrayReportShape"
+        app:layout_constraintEnd_toEndOf="@+id/StrayReportShape"
+        app:layout_constraintStart_toStartOf="@+id/StrayReportShape"
+        app:layout_constraintTop_toTopOf="@+id/StrayReportShape"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="166dp"
+        android:layout_height="140dp"
+
+        android:layout_marginEnd="146dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintEnd_toEndOf="@+id/strayReportShape2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.483"
+        app:srcCompat="@drawable/report_strays" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="View Reports"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:text="Report a Stray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="167dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="147dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/strayReportShape3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827"
+        app:srcCompat="@drawable/stray_cats" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/ShapeSettings"
-        android:layout_width="415dp"
+        android:layout_width="match_parent"
         android:layout_height="853dp"
         android:layout_marginBottom="100dp"
         android:backgroundTint="@android:color/transparent"
@@ -32,7 +32,7 @@
 
     <ListView
         android:id="@+id/SettingsList"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="476dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
