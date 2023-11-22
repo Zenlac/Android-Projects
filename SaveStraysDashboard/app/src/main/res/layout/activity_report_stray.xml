@@ -79,25 +79,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#1E1E1E"
+        android:text="Gallery"
         android:textColor="#FFFCF8"
-        android:text="Pick image from here"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_view"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.324" />
 
     <Button
-        android:id="@+id/imageTakerBtn"
+        android:id="@+id/ImageTakerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#1E1E1E"
-        android:text="Take a Picture"
+        android:text="Camera"
         android:textColor="#FFFCF8"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_view"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.324" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
