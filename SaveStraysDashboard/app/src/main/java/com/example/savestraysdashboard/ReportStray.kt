@@ -28,17 +28,18 @@ class ReportStray : AppCompatActivity() {
             pickImage()
         }
     }
+
     fun takeImage() {
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         startActivityForResult(intent,1)
     }
 
 
-
     fun pickImage() {
         val intent = Intent(MediaStore.ACTION_PICK_IMAGES)
         startActivityForResult(intent,101)
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
