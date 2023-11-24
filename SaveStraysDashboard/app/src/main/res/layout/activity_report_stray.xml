@@ -62,17 +62,20 @@
         app:layout_constraintTop_toTopOf="@+id/imageView6"
         app:layout_constraintVertical_bias="0.851" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/image_view"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:scaleType="centerCrop"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#1E1E1E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintVertical_bias="0.338"
+        android:src="@drawable/stray_cats"/>
 
     <Button
         android:id="@+id/ImagePickerBtn"
@@ -113,8 +116,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/transparent"
-        app:srcCompat="@drawable/baseline_check_circle_24"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="599dp" />
+        android:contentDescription="Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view"
+        app:layout_constraintVertical_bias="0.755"
+        app:srcCompat="@drawable/baseline_check_circle_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
