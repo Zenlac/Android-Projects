@@ -14,10 +14,12 @@
         tools:targetApi="31">
         <activity
             android:name=".ReportStrayConfirmation"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".ReportStrayForm"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".PetAdoptionInfo"
             android:exported="true"

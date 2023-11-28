@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 
 class ReportStray : AppCompatActivity() {
@@ -27,6 +28,12 @@ class ReportStray : AppCompatActivity() {
         btPickImage.setOnClickListener{
             pickImage()
         }
+
+        val reportConfirmBtn = findViewById<ImageButton>(R.id.ReportStrayConfirmBtn)
+        reportConfirmBtn.setOnClickListener{
+            val intent = Intent(this,ReportStrayForm::class.java)
+            startActivity(intent)
+        }
     }
 
     fun takeImage() {
@@ -37,14 +44,14 @@ class ReportStray : AppCompatActivity() {
 
     fun pickImage() {
         val intent = Intent(MediaStore.ACTION_PICK_IMAGES)
-        startActivityForResult(intent,101)
+        startActivityForResult(intent,2)
     }
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode == RESULT_OK) {
-            if(requestCode == 101 && data !=null) {
+            if(requestCode == 2 && data !=null) {
                 val uri = data?.data
                 imageView.setImageURI(uri)
 
@@ -55,4 +62,6 @@ class ReportStray : AppCompatActivity() {
             }
         }
     }
+
+
 }
