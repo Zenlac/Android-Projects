@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,9 +13,15 @@
         android:theme="@style/Theme.SaveStraysDashboard"
         tools:targetApi="31">
         <activity
+            android:name=".ReportStrayConfirmation"
+            android:exported="false" />
+        <activity
+            android:name=".ReportStrayForm"
+            android:exported="false" />
+        <activity
             android:name=".PetAdoptionInfo"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".ReportStray"
             android:exported="true"
