@@ -43,7 +43,8 @@ class ReportStray : AppCompatActivity() {
 
 
     fun pickImage() {
-        val intent = Intent(MediaStore.ACTION_PICK_IMAGES)
+        val intent = Intent(Intent.ACTION_PICK)
+        intent.type = "image/*"
         startActivityForResult(intent,2)
     }
 
@@ -51,17 +52,14 @@ class ReportStray : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode == RESULT_OK) {
-            if(requestCode == 2 && data !=null) {
-                val uri = data?.data
-                imageView.setImageURI(uri)
+            if(requestCode == 2 && data !=null)
+                imageView.setImageURI(data?.data)
 
             }
             if(requestCode == 1 && data !=null) {
-                val uri = data?.data
                 imageView.setImageBitmap(data.extras!!.get("data") as Bitmap)
             }
         }
-    }
-
-
 }
+
+
