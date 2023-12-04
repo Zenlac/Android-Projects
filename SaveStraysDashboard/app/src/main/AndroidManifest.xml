@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SaveStraysDashboard"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
             android:name=".MapActivity"
@@ -35,44 +35,34 @@
         -->
         <activity
             android:name=".ReportStrayConfirmation"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".ReportStrayForm"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".PetAdoptionInfo"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".ReportStray"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".ViewReports"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".Profile"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".Settings"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".StrayReporting"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".PetAdoption"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.SaveStraysDashboard">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
