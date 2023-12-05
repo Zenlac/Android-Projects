@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,16 +19,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCAPtX3XcRVOdr8ZGt_Yw0mNfrBNoU72Pg" />
         <activity
             android:name=".MapActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <!--<meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />-->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCAPtX3XcRVOdr8ZGt_Yw0mNfrBNoU72Pg" />
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 

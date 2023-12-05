@@ -22,7 +22,7 @@ class ReportStray : AppCompatActivity() {
         btTakeImage = findViewById(R.id.ImageTakerBtn)
 
         btTakeImage.setOnClickListener{
-            takeImage()
+                    takeImage()
         }
 
         btPickImage.setOnClickListener{
