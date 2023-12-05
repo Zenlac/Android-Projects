@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/shape_rectangle" />
 
     <ImageButton
-        android:id="@+id/ViewReportInfoBackBtn"
+        android:id="@+id/viewReportInfoBackBtn"
         android:layout_width="58dp"
         android:layout_height="53dp"
         android:backgroundTint="@android:color/transparent"
@@ -168,19 +168,15 @@
         android:id="@+id/LocationTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="470dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginBottom="93dp"
         android:text="Baguio Veterinary Clinic"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
-        app:layout_constraintEnd_toEndOf="@+id/imageView11"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toTopOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813" />
 
     <TextView
         android:id="@+id/ContactTxt"

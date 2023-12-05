@@ -7,12 +7,12 @@ import android.widget.ImageButton
 import android.widget.ImageView
 
 class ReportStrayForm : AppCompatActivity() {
-    private lateinit var FormBackBtn:ImageButton
+    private lateinit var formBackBtn:ImageButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_report_stray_form)
-        FormBackBtn = findViewById(R.id.FormBackBtn)
-        FormBackBtn.setOnClickListener {
+        formBackBtn = findViewById(R.id.formBackBtn)
+        formBackBtn.setOnClickListener {
             onBackPressed()
         }
 

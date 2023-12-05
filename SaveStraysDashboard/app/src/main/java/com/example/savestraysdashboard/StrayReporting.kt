@@ -7,13 +7,13 @@ import android.widget.ImageButton
 import android.widget.ImageView
 
 class StrayReporting : AppCompatActivity() {
-    private lateinit var StrayReportingBackBtn:ImageButton
+    private lateinit var strayReportingBackBtn:ImageButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stray_reporting)
 
-        StrayReportingBackBtn = findViewById(R.id.StrayReportingBackBtn)
-        StrayReportingBackBtn.setOnClickListener {
+        strayReportingBackBtn = findViewById(R.id.strayReportingBackBtn)
+        strayReportingBackBtn.setOnClickListener {
             onBackPressed()
         }
 

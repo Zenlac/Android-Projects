@@ -7,14 +7,14 @@ import android.widget.ImageButton
 import com.example.savestraysdashboard.databinding.ActivityPetAdoptionBinding
 
 class PetAdoption : AppCompatActivity() {
-    private lateinit var PetAdoptionBackBtn: ImageButton
+    private lateinit var petAdoptionBackBtn: ImageButton
     private lateinit var binding : ActivityPetAdoptionBinding
     private lateinit var userArrayList : ArrayList<User>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pet_adoption)
-        PetAdoptionBackBtn = findViewById(R.id.PetAdoptionBackBtn)
-        PetAdoptionBackBtn.setOnClickListener {
+        petAdoptionBackBtn = findViewById(R.id.petAdoptionBackBtn)
+        petAdoptionBackBtn.setOnClickListener {
             onBackPressed()
         }
 

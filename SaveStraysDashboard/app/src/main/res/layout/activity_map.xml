@@ -20,36 +20,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/shape_rectangle" />
 
-    <EditText
-        android:id="@+id/MapSearchInput"
-        android:layout_width="262dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
     <ImageButton
-        android:id="@+id/MapSearchBtn"
-        android:layout_width="56dp"
-        android:layout_height="52dp"
-        android:backgroundTint="@android:color/transparent"
-        android:contentDescription="Search button for adoption"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@drawable/baseline_search_24" />
-
-    <ImageButton
-        android:id="@+id/MapBackBtn"
+        android:id="@+id/mapBackBtn"
         android:layout_width="58dp"
         android:layout_height="53dp"
         android:backgroundTint="@android:color/transparent"
@@ -66,12 +38,29 @@
         android:id="@+id/mapFragment"
         class="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="620dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </androidx.fragment.app.FragmentContainerView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855"></androidx.fragment.app.FragmentContainerView>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="6dp"
+        android:text="Map"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MapNavBar"
+        app:layout_constraintEnd_toEndOf="@+id/MapNavBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/MapNavBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

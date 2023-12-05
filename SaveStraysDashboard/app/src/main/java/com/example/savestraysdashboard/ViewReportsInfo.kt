@@ -6,13 +6,13 @@ import android.widget.ImageButton
 import com.example.savestraysdashboard.databinding.ActivityViewReportsInfoBinding
 
 class ViewReportsInfo : AppCompatActivity() {
-    private lateinit var ViewReportInfoBackBtn: ImageButton
+    private lateinit var viewReportInfoBackBtn: ImageButton
     private lateinit var binding : ActivityViewReportsInfoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_reports_info)
-        ViewReportInfoBackBtn = findViewById(R.id.ViewReportInfoBackBtn)
-        ViewReportInfoBackBtn.setOnClickListener {
+        viewReportInfoBackBtn = findViewById(R.id.viewReportInfoBackBtn)
+        viewReportInfoBackBtn.setOnClickListener {
             onBackPressed()
         }
         binding = ActivityViewReportsInfoBinding.inflate(layoutInflater)
