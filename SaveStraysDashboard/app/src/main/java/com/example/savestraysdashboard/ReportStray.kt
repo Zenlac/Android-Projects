@@ -14,9 +14,16 @@ class ReportStray : AppCompatActivity() {
     private lateinit var imageView: ImageView
     private lateinit var btPickImage: Button
     private lateinit var btTakeImage: Button
+    private lateinit var ReportStrayBackBtn: ImageButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_report_stray)
+
+        ReportStrayBackBtn = findViewById(R.id.ReportStrayBackBtn)
+        ReportStrayBackBtn.setOnClickListener {
+            onBackPressed()
+        }
+
         imageView = findViewById(R.id.image_view)
         btPickImage = findViewById(R.id.ImagePickerBtn)
         btTakeImage = findViewById(R.id.ImageTakerBtn)

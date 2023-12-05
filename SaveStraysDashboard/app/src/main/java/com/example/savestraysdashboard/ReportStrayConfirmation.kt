@@ -13,7 +13,7 @@ class ReportStrayConfirmation : AppCompatActivity() {
 
         val reportConfirmContinueBtn = findViewById<Button>(R.id.ReportConfirmContinueBtn)
         reportConfirmContinueBtn.setOnClickListener{
-            val intent = Intent(this,StrayReporting::class.java)
+            val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
     }

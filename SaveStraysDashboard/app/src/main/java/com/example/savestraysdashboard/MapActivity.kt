@@ -2,12 +2,12 @@ package com.example.savestraysdashboard
 import com.google.android.gms.maps.SupportMapFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentActivity
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 
 
 class MapActivity : AppCompatActivity(),OnMapReadyCallback {
+    private var mGoogleMap:GoogleMap? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
@@ -20,6 +20,6 @@ class MapActivity : AppCompatActivity(),OnMapReadyCallback {
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
-
+        mGoogleMap = googleMap
     }
 }
