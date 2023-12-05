@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ImageView
 
 class ReportStrayForm : AppCompatActivity() {
     private lateinit var FormBackBtn:ImageButton
@@ -14,6 +15,8 @@ class ReportStrayForm : AppCompatActivity() {
         FormBackBtn.setOnClickListener {
             onBackPressed()
         }
+
+
 
         val reportFormConfirmBtn = findViewById<ImageButton>(R.id.ReportFormConfirmBtn)
         reportFormConfirmBtn.setOnClickListener{

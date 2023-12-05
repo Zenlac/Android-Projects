@@ -8,14 +8,14 @@ import com.example.savestraysdashboard.databinding.ActivityPetAdoptionBinding
 import com.example.savestraysdashboard.databinding.ActivityViewReportsBinding
 
 class ViewReports : AppCompatActivity() {
-    private lateinit var StraylistBackBtn:ImageButton
+    private lateinit var straylistBackBtn:ImageButton
     private lateinit var binding: ActivityViewReportsBinding
     private lateinit var userArrayList : ArrayList<User>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_reports)
-        StraylistBackBtn = findViewById(R.id.StraylistBackBtn)
-        StraylistBackBtn.setOnClickListener {
+        straylistBackBtn = findViewById(R.id.straylistBackBtn)
+        straylistBackBtn.setOnClickListener {
             onBackPressed()
         }
 
